@@ -13,6 +13,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -63,6 +64,7 @@ section{
 }
 
 .navbar .nav-item a {
+    /* display: block; */
     color: #fff;
     font-size: 18px;
     font-weight: 800;
@@ -126,7 +128,7 @@ section{
     margin-top: 20vh;
 }
 
-.home-content .second-title span{
+.home-content .second-title .slow{
     margin-top: 50px;
 }
 
@@ -610,12 +612,17 @@ footer{
         width: 90%;
         margin: 0;
     }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        right: -200px;
+    }
 }
 
 @media (max-width: 1104px){
-    .people-content .people-image img{
-        /* width: 240px;
-        height: 320px; */
+    .navbar .navbar-nav{
+        position: absolute;
+        right: -300px;
     }
     
     .people-content .people-image::before{
@@ -675,19 +682,23 @@ footer{
 
     .navbar .navbar-nav{
         position: fixed;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         left: -100%;
         top: 0;
-        background-color: #111;
-        text-align: center;
-        padding-top: 80px;
+        background-color: aliceblue;
+        text-align: right;
+        padding: 80px 100px 0px 0px;
         transition: all 0.3s ease;
     }
 
     /* 這個可以讓一排menu縮起來變成menu-btn */
     .navbar .navbar-nav.active{
-        left: 0;
+        left: -80%;
+    }
+
+    .navbar .navbar-nav.active a{
+        color: black;
     }
 
     .menu-btn{

@@ -1,6 +1,8 @@
 $(document).ready(function(){
     AOS.init({
         duration: 1200,
+        once: true,
+        offset: 200,
     });
     $(window).scroll(function(){
         if(this.scrollY >  $(window).height()){
@@ -24,6 +26,13 @@ $(document).ready(function(){
     $('.menu-btn').click(function(){
         $('.navbar .navbar-nav').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
+    });
+
+    var typed = new Typed(".typing", {
+        strings: ["中文", "Developer", "Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
     });
 
     //go to top button

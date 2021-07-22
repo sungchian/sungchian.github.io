@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
 </head>
 <body>
@@ -18,16 +19,16 @@
             </div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">茶屋の人</a>
+                    <a href="#people" class="nav-link">茶屋の人</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">茶屋の事</a>
+                    <a href="#thing-content" class="nav-link">茶屋の事</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">茶屋の時</a>
+                    <a href="#time" class="nav-link">茶屋の時</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">茶屋の物</a>
+                    <a href="#goods" class="nav-link">茶屋の物</a>
                 </li>
             </ul>
             <div class="menu-btn">
@@ -40,8 +41,16 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="vertical-text home-content">
-                <div class="first-title">世界越快</div>
-                <div class="second-title">心則<span>慢</span></div>
+                <div class="first-title">
+                    <span data-aos="zoom in">世</span>
+                    <span data-aos="zoom in" data-aos-delay="100">界</span>
+                    <span data-aos="zoom in" data-aos-delay="200">越</span>
+                    <span data-aos="zoom in" data-aos-delay="300">快</span></div>
+                <div class="second-title">
+                    <span data-aos="zoom in" data-aos-delay="400">心</span>
+                    <span data-aos="zoom in" data-aos-delay="500">則</span>
+                    <span class="slow" data-aos="zoom-in" data-aos-delay="1000">慢</span>
+                </div>
             </div>
         </div>
     </section>
@@ -50,7 +59,9 @@
     <section class="people" id="people">
         <div class="max-width">
             <div class="people-content">
-                <h2 class="name" data-aos="zoom-in">茶屋</h2>
+                <h2 class="name" data-aos="zoom-in">茶屋
+                    <!-- <span class="typing"></span> -->
+                </h2>
                 <hr>
                 <div class="people-title">
                     <h4 class="title" data-aos="fade-left">茶屋の人</h4>
@@ -74,7 +85,7 @@
     <!--Thing Section-->
     <section class="thing" id="thing">
         <div class="max-width">
-            <div class="thing-content">
+            <div id="thing-content" class="thing-content">
                 <div class="thing-title">
                     <h4 class="vertical-text title" data-aos="fade-down">茶屋の事</h4>
                 </div>
