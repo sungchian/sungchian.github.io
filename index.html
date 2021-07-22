@@ -1,103 +1,240 @@
-
-
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Boogaloo|Covered+By+Your+Grace" rel="stylesheet">
-<html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html lang="en">
 <head>
-    <style>
-    h1{
-      color: #E93EFF
-      font-family:Lobster, Monospace;	 
-      }
+    <meta charset="UTF-8">
+    <title>Tea House</title>
+    <link rel="stylesheet" href="main.css" type="text/css" media="all ">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-   h2{
-	margin-left: 330px;
-	font-family:Lobster, Monospace;
-      
-
-    body{
-         background-image: url(http://tupian.aladd.net/2013/photo1/3185.jpg);
-         background-attachment: fixed;
-         background-position: center;     
-         background-repeat: no-repeat;
-         background-size: cover; 
-       }
-     p{
-        color: #7700BB
-        font-family:Lobster, Monospace;
-        font-size: 25px;
-      }
-      
-     ul{
-	margin-left: 420px;
-	font-size: 25px;
-	font-family: 'Boogaloo', cursive;
-      } 
-     a{
-         text-decoration-color: aquamarine;
-	color:#FF5511; 
-      } 
-    .smaller-image {
-    		width: 150px;
-            position: relative;
-            
-
-  		}
-  	.smallest-image {
-  			left: 5px;
-            width: 40px;
-  		}
-  	.thick-white-border {
-    	        border-color: white;
-   		        border-width: 10px;
-    	        border-style: solid;
-    	        border-radius: 50%;
-  		}
-     .thick-white-border2{      
-      border-color: white;
-      
-      width: 170px;
-      border-width: 200px;
-      border-radius: 50%;
-      position: relative;
-      left: 550px;
-      border:4px white;
-    }  
-    
-
-          </style>
-
-<title>My profile</title>
-<body background="http://tupian.aladd.net/2013/photo1/3185.jpg">   
-  </head>
-
+</head>
 <body>
-     
-     
-     <div><h1 align="center">Sung Chian's Web</h1></div>
-     
-    <center><img src="https://scontent.xx.fbcdn.net/v/t1.0-9/17499193_1584173384944457_4403208095683200284_n.jpg?oh=cc2cd5cd62c1afc34ddd7cb26a631d9a&oe=595E9877" alt="my picture" class="thick-white-border2" style="width:100px;height:150px;"></center>
-     <hr size="5" align="center" noshade width="340" color="#cc33ff">
-     <h2>Name:</h2>
-     <p align="center">Wen Sung Chian / 溫淞謙</p>
-     <h2>Birthday:</h2>
-     <p align="center">1998/08/29</p>
-     <h2>E-mail:</h2>
-     <p align="center">bnbn870829@gmail.com</p>
-     <h2>Education:</h2>
-     <ul type="circle">
-     <li align="center">Graduated from  <a href="http://www.hwhs.tc.edu.tw/"> Hong Wen Senior High School</a>
-     <li align="center">Studying in <a href="http://www.fju.edu.tw/#&panel1-1">Fu Jen Catholic University MIIA</a>
-     </ul>
-     <a href="https://www.facebook.com/profile.php?id=100000554334429"><img style='position:relative;left:50px;top:50px;width: 50px;height: 50px;' src="http://www.toca.org.tw/TOCA/_imagecache/fb_icon_325x325%20[1].png" alt="my facebook link" class="smallest-image" align="left"></a>
-     <a href="https://github.com/sungchian"><img style='position:relative;left:50px;top:50px;width: 50px;height: 50px;' src="http://arcaneiceman.github.io/img/mark-github-256.png"></a>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="nav-title">
+                <a href="#">LOGO</a>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">茶屋の人</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">茶屋の事</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">茶屋の時</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">茶屋の物</a>
+                </li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
-     </body>
-     
-    <div> <a href="#top" style="position: relative;left: 150px">top</a></div>
-     
-    <div><marquee behavior="alternate" hspace ="60" bgcolor="#CCEEFF"><c style="color:#FF0000">Sincerely Appreciate Your Following</c></marquee></div>
-        
-     </html>
+    <!--Home Section-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="vertical-text home-content">
+                <div class="first-title">世界越快</div>
+                <div class="second-title">心則<span>慢</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!--People Section-->
+    <section class="people" id="people">
+        <div class="max-width">
+            <div class="people-content">
+                <h2 class="name" data-aos="zoom-in">茶屋</h2>
+                <hr>
+                <div class="people-title">
+                    <h4 class="title" data-aos="fade-left">茶屋の人</h4>
+                </div>
+                <div class="people-frame detail">
+                    <div class="people-image" data-aos="slide-up" data-aos-anchor-placement="top-center">
+                        <img src="teapeople.jpg">
+                    </div>
+                    <div class="detail people-detail" data-aos="fade-down">
+                        <h4>Name</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem ac dignissim vene
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis sem ac dignissim vene
+                        <p class="learn-more">Learn More</p>
+                                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Thing Section-->
+    <section class="thing" id="thing">
+        <div class="max-width">
+            <div class="thing-content">
+                <div class="thing-title">
+                    <h4 class="vertical-text title" data-aos="fade-down">茶屋の事</h4>
+                </div>
+                <div class="detail thing-detail" data-aos="flip-left">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ad dolores, id fugit ipsa debitis suscipit ex corrupti? Praesentium error quaerat soluta explicabo veniam enim nobis vero quidem, molestiae ratione?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias quaerat perspiciatis quibusdam dolore. Fuga quod mollitia natus laborum similique! Inventore fugiat quidem nemo, aspernatur fuga ratione perferendis ducimus at delectus!
+                    </p>
+                    
+                </div>
+                <p class="learn-more" data-aos="fade-right">Learn More</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Time Section-->
+    <section class="time" id="time">
+        <div class="max-width">
+            <div class="time-content">
+                <div class="detail time-detail" data-aos="zoom-out">
+                    <p class="vertical-text" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                        路邊有一地攤，擺地攤的是一個中年女人。一個中年男人騎著自行車過來送飯。
+
+他一下車，就謙意地笑道，對不起，來遲了，餓了吧？女人擡起頭，看到男人，眼睛里閃過一絲亮色，笑道，不急，還早呢。
+
+男人憨憨地笑笑，從自行車車簍里拿出飯盒，坐在女人身邊，說道，快吃吧，不要涼了，我陪你一起吃。
+                    </p>
+                    
+                </div>
+                <p class="learn-more">Learn More</p>
+                <div class="time-title">
+                    <h4 class="vertical-text title" data-aos="fade-left">茶屋の時</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Goods Section-->
+    <section class="goods" id="goods">
+        <div class="max-width">
+            <div class="goods-content">
+                <div class="goods-title">
+                        <h4 class="title" data-aos="fade-up">茶屋の物</h4>
+                </div>
+                <!-- <div class="goods-frame">
+                    <img src="tea1.jpg" alt="#" class="pic pic1">
+                    <img src="tea2.jpg" alt="#" class="pic pic2">
+                    <img src="tea3.jpg" alt="#" class="pic pic3">
+                    <div class="detail goods-detail">      
+                    </div>
+                    <div class="detail goods-detail">      
+                    </div>
+                </div> -->
+                <ul class="goods-list">
+                    <li id="item1" class="goods-item item1" data-aos="fade-down">
+                        <div class="goods-card">
+                            <img src="tea1.jpg" alt="" class="pic pic1">
+                            <div class="detail goods-detail">
+                                <h4 class="goods-subtitle">上等茶葉</h4>
+                                <p class="goods-text">
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="item2" class="goods-item" data-aos="fade-down" data-aos-id="item1" data-aos-delay="300">
+                        <div class="goods-card">
+                            <img src="tea2.jpg" alt="" class="pic pic2">
+                            <div class="detail goods-detail">
+                                <h4 class="goods-subtitle">精緻茶具</h4>
+                                <p class="goods-text">
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="item3" class="goods-item item3" data-aos="fade-down" data-aos-id="item2" data-aos-delay="600">
+                        <div class="goods-card">
+                            <img src="tea3.jpg" alt="" class="pic pic3">
+                            <div class="detail goods-detail">
+                                <h4 class="goods-subtitle">完美擺盤</h4>
+                                <p class="goods-text">
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                    這是一段文字這是一段文字這是一段文字這是一段文字這是一段文字
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <p class="learn-more" data-aos="fade-right">Learn More</p>   
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <button class="gotop">
+            <span class="vertical-text">PAGE TOP</span>
+        </button>
+        <div class="foot-mid">
+            <ul class="mid-intro">
+                <li class="mid-self">
+                    <span class="foot-subtitle">個人資料</span>
+                    <ul class="mid-self-list">
+                        <li class="mid-self-item mid-content">Name</li>
+                        <li class="mid-self-item mid-content">English Name</li>
+                        <li class="mid-self-item mid-content">Study</li>
+                        <li class="mid-self-item mid-content">Phone</li>
+                        <li class="mid-self-item mid-content">Address</li>
+                    </ul>
+                </li>
+                <li class="mid-business">
+                    <span class="foot-subtitle">事業介紹</span>
+                    <ul class="mid-business-list">
+                        <li class="mid-business-item mid-content">Company1</li>
+                        <li class="mid-business-item mid-content">Company2</li>
+                        <li class="mid-business-item mid-content">Company3</li>
+                    </ul>
+                </li>
+                <li class="mid-skill">
+                    <span class="foot-subtitle">技能介紹</span>
+                    <ul class="mid-skill-list">
+                        <li class="mid-skill-item mid-content">Skill1</li>
+                        <li class="mid-skill-item mid-content">Skill2</li>
+                        <li class="mid-skill-item mid-content">Skill3</li>
+                    </ul>
+                </li>
+                <li class="mid-ref">
+                    <span class="foot-subtitle">採用情報</span>
+                    <ul class="mid-ref-list">
+                        <li class="mid-ref-item mid-content">文藝春秋</li>
+                        <li class="mid-ref-item mid-content">文藝春秋</li>
+                        <li class="mid-ref-item mid-content">文藝春秋</li>
+                    </ul>
+                </li>
+                <li class="mid-social">
+                    <ul class="mid-social-list">
+                        <li class="mid-social-item mid-content"><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li class="mid-social-item mid-content"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="mid-social-item mid-content"><a href=""><i class="fab fa-behance"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="foot-bottom">
+            <ul class="foot-list">
+                <li class="foot-item"><a href="#">企業網站</a></li>
+                <li class="foot-item"><a href="#">隱私政策</a></li>
+                <li class="foot-item"><a href="#">免責事項</a></li>
+            </ul>
+        </div>
+        <div class="foot-copyright">
+            Copyright © 2022 SungChian Ltd. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
