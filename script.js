@@ -28,15 +28,16 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    //go to top button
+    $('.gotop').click(function(){
+        console.log("2321321");
+        $('html,body').animate({scrollTop: 0}, 500);
+    });
+
     var typed = new Typed(".typing", {
         strings: ["中文", "Developer", "Designer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
-    });
-
-    //go to top button
-    $('.gotop').click(function(){
-        $('html,body').animate({scrollTop: 0}, 500);
     });
 });
