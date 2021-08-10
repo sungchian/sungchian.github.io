@@ -34,6 +34,9 @@ section{
     /* background: rgba(0, 0, 0, 0.1); */
     z-index: 999;
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
 .max-width{
@@ -71,6 +74,9 @@ section{
     margin-left: 100px;
     text-decoration: none;
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
 .navbar .nav-item a:hover{
@@ -89,6 +95,9 @@ section{
 .navbar.sticky .nav-item a{
     color: #A19882;
     transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
 }
 
 .navbar.sticky a:hover{
@@ -167,6 +176,9 @@ section{
     position: relative;
     display: inline-block;
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     color: #A19882;
 }
 
@@ -179,13 +191,20 @@ section{
     background: url('Arrow\ 1.png') no-repeat;
     background-position: 100% 0%;
     transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .learn-more:hover{
+    -webkit-transform: translateX(20%);
+    -moz-transform: translateX(20%);
     transform: translateX(20%);
 }
 
 .learn-more:hover::after{
+    -webkit-transform: translateX(30%);
+    -moz-transform: translateX(30%);
     transform: translateX(30%);
 }
 
@@ -501,6 +520,7 @@ footer{
     cursor: pointer;
     outline: none;
     -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
 }
 
 .gotop::before{
@@ -517,6 +537,8 @@ footer{
 }
 
 .gotop:hover::before{
+    -webkit-transform: translateY(-10%);
+    -moz-transform: translateY(-10%);
     transform: translateY(-10%);
 }
 
@@ -550,6 +572,8 @@ footer{
     top: 50%;
     right: -.5rem;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
 }
 
 .foot-bottom .foot-list .foot-item a{
@@ -669,6 +693,9 @@ footer{
         width: 100%;
         padding: 30px 0;
         transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
     }
 
     .navbar.sticky .nav-item a{
@@ -690,6 +717,9 @@ footer{
         text-align: right;
         padding: 80px 100px 0px 0px;
         transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
     }
 
     /* 這個可以讓一排menu縮起來變成menu-btn */
@@ -746,8 +776,39 @@ footer{
 }
 
 @media (max-width: 690px){
+    .max-width{
+        /* padding: 0 115px; */
+        max-width: 1000px;
+    }
+
+    h4{
+        font-size: 50px;
+        /* margin: 0; */
+    }
+
+    .menu-btn{
+        font-size: 50px;
+    }
+
+    .people-content h2{
+        font-size: 70px;
+        margin: 0;
+    }
+
+    .people-content .people-title h4{
+        font-size: 50px;
+    }
+
+    .people-content .people-image img{
+        width: 200%;
+    }
+
+    .people-content .people-detail p{
+        font-size: 30px;
+    }
+
     .home-content{
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .home-content .second-title span{

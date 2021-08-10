@@ -5,7 +5,7 @@ $(document).ready(function(){
         offset: 200,
     });
     $(window).scroll(function(){
-        if(this.scrollY >  $(window).height()){
+        if(this.scrollY >  $(window).height() -50){
             $('.navbar').addClass("sticky");   
         }
         else{
@@ -30,7 +30,6 @@ $(document).ready(function(){
 
     //go to top button
     $('.gotop').click(function(){
-        console.log("2321321");
         $('html,body').animate({scrollTop: 0}, 500);
     });
 
