@@ -643,7 +643,7 @@ footer{
     }
 }
 
-@media (max-width: 1104px){
+@media screen and (max-device-width: 1104px){
     .navbar .navbar-nav{
         position: absolute;
         right: -300px;
@@ -678,7 +678,7 @@ footer{
     }
 }
 
-@media (max-width: 1056px){
+@media screen and (max-device-width: 1056px){
     .people-content .people-frame .people-detail .learn-more::after{
         /* width: 80px; */
         right: -16px;
@@ -686,7 +686,7 @@ footer{
 
 }
 
-@media (max-width: 980px){
+@media screen and (max-device-width: 980px){
     .navbar{
         position: fixed;
         top: 0;
@@ -775,15 +775,19 @@ footer{
 
 }
 
-@media (max-width: 690px){
+@media screen and (max-device-width: 690px){
     .max-width{
         /* padding: 0 115px; */
         max-width: 1000px;
     }
 
-    h4{
+    .people-content h4{
         font-size: 50px;
         /* margin: 0; */
+    }
+
+    .title{
+        font-size: 50px;
     }
 
     .menu-btn{
@@ -795,7 +799,11 @@ footer{
         margin: 0;
     }
 
-    .people-content .people-title h4{
+    .people-content .people-frame .people-detail{
+        width: 100%;
+    }
+
+    .people-content .people-frame .people-detail h4{
         font-size: 50px;
     }
 
@@ -803,7 +811,7 @@ footer{
         width: 200%;
     }
 
-    .people-content .people-detail p{
+    .people-content .people-frame .people-detail p{
         font-size: 30px;
     }
 
@@ -815,9 +823,38 @@ footer{
         margin-top: 35px;
     }
 
+    .thing-content .thing-detail{
+        width: initial;
+        height: initial;
+    }
+
+    .thing-content .thing-detail p{
+        line-height: 2.5rem;
+    }
+
+    .detail p{
+        font-size: 25px;
+    }
+
+    .time-content .time-detail{
+        height: initial;
+    }
+
+    .time-content .time-detail p{
+        font-size: 25px;
+    }
+
     .goods-content .goods-list .goods-item .goods-card{
-        width: 90%;
+        /* width: 90%; */
         margin: 0;
+    }
+
+    .goods-content .goods-list .goods-item .goods-subtitle{
+        font-size: 45px;
+    }
+
+    .goods-content .goods-list .goods-item .goods-text{
+        font-size: 30px;
     }
 
 }
