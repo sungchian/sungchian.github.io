@@ -86,7 +86,7 @@ section{
 .navbar.sticky{
     position: fixed;
     top: 0;
-    height: 60px;
+    height: 100px;
     padding: 20px 0;
     background: rgba(254, 247, 220, .8);
     /* opacity: .4; */
@@ -406,7 +406,7 @@ footer *{
     top: 10%;
     right: 10%;
     border: solid 3px #E6DDC6;
-    z-index: -5;
+    z-index: -999;
 }
 
 .time-content .time-detail p{
@@ -747,8 +747,8 @@ footer{
 
     .navbar .navbar-nav li a{
         display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
+        margin: 20px -50px 50px 0;
+        font-size: 50px;
     }
 
     .people-content .people-image{
@@ -823,25 +823,28 @@ footer{
         margin-top: 35px;
     }
 
+    .thing-content{
+        width: 130%;
+    }
+
     .thing-content .thing-detail{
         width: initial;
         height: initial;
     }
 
     .thing-content .thing-detail p{
+        font-size: 30px;
         line-height: 2.5rem;
-    }
-
-    .detail p{
-        font-size: 25px;
+        letter-spacing: .1rem;
     }
 
     .time-content .time-detail{
         height: initial;
+        width: 130%;
     }
 
     .time-content .time-detail p{
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .goods-content .goods-list .goods-item .goods-card{
