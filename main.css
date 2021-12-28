@@ -86,7 +86,7 @@ section{
 .navbar.sticky{
     position: fixed;
     top: 0;
-    height: 100px;
+    height: 60px;
     padding: 20px 0;
     background: rgba(254, 247, 220, .8);
     /* opacity: .4; */
