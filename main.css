@@ -736,9 +736,6 @@ footer{
         -moz-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
     }
-    .navbar.sticky {
-        width: 50%;
-    }
 
     .navbar.sticky .nav-item a{
         color: #000;
